@@ -231,6 +231,7 @@ function User() {
 
           <Form className="formalign normalBackground animate__animated animate__fadeIn">
             <h2 className="user">User Registration</h2>
+            <hr></hr>
             <Form.Group className="mb-3" controlId="formBasicAcNo">
               <Form.Label className="field">Name</Form.Label>
               <Form.Control className="inputData" name="acNo" type="text" placeholder="Enter Name" required={true} />
