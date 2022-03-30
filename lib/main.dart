@@ -51,7 +51,10 @@ class _ScreenState extends State<Screen> {
     _amountController.text =
         (Random.secure().nextDouble() * 10).toStringAsFixed(2);
 
-    Future.delayed(Duration(milliseconds: 0), () async {
+    Future.delayed(
+        Duration(
+          milliseconds: 0,
+        ), () async {
       _apps = await UpiPay.getInstalledUpiApplications(
           statusType: UpiApplicationDiscoveryAppStatusType.all);
       setState(() {});
